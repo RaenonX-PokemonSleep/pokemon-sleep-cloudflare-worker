@@ -1,4 +1,4 @@
-name = "pokemon-sleep-cloudflare-worker"
+name = "pokemon-sleep-maintenance-page"
 main = "src/worker.ts"
 compatibility_date = "2023-08-07"
 

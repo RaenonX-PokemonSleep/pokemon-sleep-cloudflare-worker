@@ -21,7 +21,7 @@ export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
 		const html = `<!DOCTYPE html>
           <body>
-            <h1>維護中 / Maintenancing</h1>
+            <h1>維護中 / Under Maintenance</h1>
             <p>網站維護中，請稍後重試。</p>
             <p>The website is under maintenance. Please try again later.</p>
           </body>`;
