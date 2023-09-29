@@ -22,8 +22,10 @@ export default {
 		const html = `<!DOCTYPE html>
           <body>
             <h1>維護中 / Under Maintenance</h1>
-            <p>網站維護中，請稍後重試。</p>
-            <p>The website is under maintenance. Please try again later.</p>
+            <p>網站維護中，預計於 2023/09/29 12:45 PM (UTC +8) 結束。</p>
+            <p>The website is under maintenance. Scheduled end time is Sep 28 11:45 PM (UTC -5).</p>
+            <p>加入<a href="https://discord.gg/eeveesleep">我們的 Discord</a> 以獲得最新遊戲及網站更新訊息！</p>
+            <p>Join <a href="https://discord.gg/eeveesleep">our Discord</a> for latest website and in-game updates!</p>
           </body>`;
 
       return new Response(html, {
