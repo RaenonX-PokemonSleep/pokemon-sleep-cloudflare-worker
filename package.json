@@ -1,6 +1,7 @@
 {
   "name": "pokemon-sleep-cloudflare-worker",
   "version": "0.0.0",
+  "packageManager": "yarn@4.4.1",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
