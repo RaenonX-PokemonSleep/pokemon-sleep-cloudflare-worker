@@ -17,9 +17,19 @@ export interface Env {
 
 export default {
 	fetch: async (request: Request, env: Env, ctx: ExecutionContext): Promise<Response> => {
-		return new Response(
-			JSON.stringify({ok: true}),
-			{headers: {'content-type': 'application/json'}}
-		);
+		const html = `
+			<!DOCTYPE html>
+			<body>
+				<h1>伺服器升級中 / Server Upgrade in progress</h1>
+				<p>加入<a href="https://discord.gg/eeveesleep">我們的 Discord</a> 以獲得最新遊戲及網站更新訊息！</p>
+				<p>Join <a href="https://discord.gg/eeveesleep">our Discord</a> for the latest website and in-game updates!</p>
+			</body>
+		`;
+
+		return new Response(html, {
+			headers: {
+				"content-type": "text/html;charset=UTF-8",
+			},
+		});
 	}
 };
